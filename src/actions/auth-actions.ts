@@ -104,6 +104,7 @@ export async function updateProfile(prevState: string | undefined, formData: For
       });
       
       revalidatePath('/perfil');
+      revalidatePath('/'); // Update landing page carousel
       return "Profile updated successfully";
 
   } catch (error) {
